@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -46,14 +47,11 @@ class MyApp extends StatelessWidget{
                   ),),
                   const SizedBox(height: 22),
                   Row(
-
-                  ),
-                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         width: 150,
-                        height: 220,
+                        height: 230,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(36),
                             color: Colors.white
@@ -114,7 +112,7 @@ class MyApp extends StatelessWidget{
                       ),
                       Container(
                         width: 150,
-                        height: 220,
+                        height: 230,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(36),
                             color: Colors.white
@@ -169,9 +167,55 @@ class MyApp extends StatelessWidget{
                                     ),
                                   ),
                                 ],
-                              )
+                              ),
+
                             ],
                           )
+                      )
+                    ],
+                  ),
+                  const SizedBox(height: 30,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      Text("Schedule", style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold
+                      ),),
+                      Text("Sept, 2023", style: TextStyle(
+                        fontSize: 12
+                      ),)
+                    ],
+                  ),
+                  const SizedBox(height: 30,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color.fromARGB(255, 142, 131, 131),
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 12,
+                            horizontal: 18,
+                          ),
+                          child: Column(
+                            children: const [
+                              Text("11", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                              ),
+                              Text("s")
+                            ],
+                          ),
+                        ),
+                      ),
+                      Stack(
+
                       )
                     ],
                   )
